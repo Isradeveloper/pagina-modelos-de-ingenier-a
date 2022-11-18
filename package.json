@@ -1,12 +1,15 @@
 {
   "name": "isra-modelos",
+  "homepage": "https://Isradeveloper.github.io/pagina-modelos-de-ingenieria",
   "private": true,
   "version": "0.0.0",
   "type": "module",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "bootstrap": "^5.2.2",
@@ -26,6 +29,7 @@
     "eslint-plugin-n": "^15.5.1",
     "eslint-plugin-promise": "^6.1.1",
     "eslint-plugin-react": "^7.31.10",
+    "gh-pages": "^4.0.0",
     "sass": "^1.56.1",
     "vite": "^3.2.3"
   }
