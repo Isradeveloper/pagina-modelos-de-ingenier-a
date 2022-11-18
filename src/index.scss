@@ -1,5 +1,5 @@
 @use './scss/abstracts/variables';
-@import "bootstrap/scss/bootstrap";
+@import "../node_modules/bootstrap/scss/bootstrap.scss";
 
 html {
     background-color: whitesmoke;
