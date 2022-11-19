@@ -25,7 +25,7 @@ export const OffCanvas = () => {
           <Link to={'trabajo-energia-cinetica'} onClick={(e) => { setShow(false) }}>Trabajo y energía cinética</Link>
           <Link to={'conservacion-energia'} onClick={(e) => { setShow(false) }}>Conservación de la energía</Link>
           <Link to={'momento-angular'} onClick={(e) => { setShow(false) }}>Momento angular</Link>
-          <Link to={'variacion-energia-cinetica'} onClick={(e) => { setShow(false) }}>Variación de la energía cinética</Link>
+          <Link to={'colisiones'} onClick={(e) => { setShow(false) }}>Colisiones</Link>
         </Offcanvas.Body>
       </Offcanvas>
     </>

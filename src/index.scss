@@ -1,8 +1,8 @@
 @use './scss/abstracts/variables';
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
-html {
-    background-color: whitesmoke;
+#root {
+    background-color: var(--color-primario);
 }
 
 .navbar {
@@ -10,27 +10,35 @@ html {
     height: 5rem;
     padding: 4rem;
     width: 100%;
+    position: sticky;
+    top: 0px;
 }
 
+
 .sidebar {
-    background-color: whitesmoke;
+    background-color: var(--color-primario);
     a {
-        color: #4b2ce3;
+        color: whitesmoke;
         text-decoration: none;
         font-weight: 600;
         font-family: 'Inter', sans-serif;
+        
+        &:hover {
+          color: #4b2ce3;
+        }
     }
 }
 
 .titulo-sidebar {
+  
     font-weight: 700;
-    color: var(--color-secundario);
+    color: whitesmoke;
     border-bottom: 2px solid var(--color-secundario);
     font-family: 'Inter', sans-serif;
 }
 
 .header {
-    background-color: whitesmoke;
+  background-color: var(--color-primario);
 }
 
 .home {
@@ -44,6 +52,7 @@ html {
     justify-content: center;
     flex-direction: column;
     width: 100%;
+    border-bottom: 10px solid #2c057f;
 
     .titulo {
         color: white;
@@ -68,9 +77,10 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #735ca4;
+  background: rgb(7,3,29);
+  background: linear-gradient(90deg, rgba(7,3,29,1) 0%, rgba(20,13,54,1) 100%);
   width: 100%;
-  height: 50rem;
+  height: calc(100vh);
 
   .row {
     width: 100%;
@@ -105,9 +115,175 @@ html {
 
     img {
       border-radius: 4rem;
+      width: 90%;
     }
   }
 }
+
+.teoria-others {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(7,3,29);
+  background: linear-gradient(90deg, rgba(7,3,29,1) 0%, rgba(20,13,54,1) 100%);
+  width: 100%;
+  height: calc(100vh - 8rem);
+  border-bottom: 10px solid #2c057f;
+
+
+  .row {
+    width: 100%;
+    height: 90%;
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    font-family: 'Open sans';
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: justify;
+    padding-right: 4rem;
+
+    span {
+      font-weight: 700;
+      font-size: 3rem;
+      border-bottom: 3px solid #4b2ce3;
+      text-align: center;
+    }
+  }
+
+  .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+#trabajo-cinetica {
+  background-color:#4b2ce3;
+  font-family: 'Open sans';
+  font-weight: 600;
+  font-size: 2rem;
+  border: #4b2ce3;
+  transition: all 0.4s;
+
+  &:hover {
+    background-color: #2c057f;
+    cursor: pointer;
+  }
+}
+
+.ejemplos {
+  padding-top: 5rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  background: rgb(7,3,29);
+  background: linear-gradient(90deg, rgba(7,3,29,1) 0%, rgba(20,13,54,1) 100%);
+  width: 100%;
+  height: auto;
+  padding-bottom: 2rem;
+  font-family: 'Open sans';
+
+
+  .row {
+    width: 100%;
+    height: 90%;
+  }
+
+  h1 {
+    display: flex;
+    justify-content: center;
+    color: whitesmoke;
+    font-weight: 600;
+    font-size: 3rem;
+    
+  }
+
+  .texto {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    padding: 2rem;
+    font-family: 'Open sans';
+    font-size: 2rem;
+    font-weight: 400;
+    text-align: justify;
+    padding-right: 4rem;
+
+    span {
+      font-weight: 700;
+      font-size: 3rem;
+      border-bottom: 3px solid #4b2ce3;
+      text-align: center;
+    }
+  }
+
+  .imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .accordion {
+    font-family: 'Open sans';
+    color: var(--color-primario);
+    font-size: 1rem;
+  }
+
+  .accordion-header {
+    font-family: 'Open sans';
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 700;
+  }
+
+  .accordion-button.collapsed {
+    font-family: 'Open sans';
+    color: var(--color-primario);
+    font-size: 1rem;
+    font-weight: 600;
+  }
+
+  .accordion-button {
+    font-family: 'Open sans';
+    color: #2c057f;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #d8d4ea;
+
+    &:focus {
+      border: #a486fe;
+      box-shadow: 0 0 0 0.25rem rgba(141, 13, 253, 0.25);
+    }
+  }
+
+  .accordion-button:not(.collapsed) {
+    background-color: #c4bce8;
+    box-shadow: 0 0 0 0.25rem rgba(141, 13, 253, 0.25);
+  }
+
+  .accordion-button.collapsed::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2323fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");
+  }
+
+  .accordion-button:not(.collapsed)::after {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%2323fff'%3e%3cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3e%3c/svg%3e");    transform: var(--bs-accordion-btn-icon-transform);
+  }
+
+  .accordion-body {
+    background-color: whitesmoke;
+    color: var(--color-primario);
+  }
+}
+
 
 /* Small devices (portrait tablets and large phones, 768px and down) */
 @media only screen and (max-width: 768px) {
@@ -184,11 +360,64 @@ html {
       display: flex;
       justify-content: center;
       align-items: center;
+      width: 90%;
   
       img {
+        width: 100%;
+        height: 70%;
         border-radius: 1rem;
-        width: 90%;
       }
+    }
+  }
+
+  .teoria-others {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #735ca4;
+    width: 100%;
+  
+    .row {
+      width: 100%;
+      height: 90%;
+    }
+  
+    .texto {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      padding: 1.5rem;
+      font-family: 'Open sans';
+      font-size: 1.2rem;
+      font-weight: 400;
+      text-align: justify;
+  
+      span {
+        font-weight: 700;
+        font-size: 1.5rem;
+        border-bottom: 3px solid #4b2ce3;
+        text-align: center;
+      }
+    }
+  
+    .imagen {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 90%;
+      height: 50%;
+    }
+  }
+
+  .ejemplos {
+    h1 {
+      height: 4rem;
+    }
+
+    .row {
+      height: auto;
     }
   }
 }
