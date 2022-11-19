@@ -7,4 +7,5 @@
 - Moisés Cantillo Bastidas
 
 >Israel Trujillo Domínguez
+>
 >Desarrollado en React por:  ✨Isradeveloper✨
