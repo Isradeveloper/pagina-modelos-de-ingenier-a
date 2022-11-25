@@ -1,7 +1,7 @@
 import React from 'react'
 import { Accordion } from 'react-bootstrap'
 
-export const MomentoLineal = () => {
+export const MomentoLinealDos = () => {
   const screen = window.screen.width
 
   return (

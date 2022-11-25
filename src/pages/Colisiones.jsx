@@ -22,6 +22,10 @@ export const Colisiones = () => {
                   Cuando dos o más cuerpos se aproximan entre sí, entre ellos actúan fuerzas internas que hacen que su momento lineal y su energía varíen, produciéndose un intercambio entre ellos de ambas magnitudes. En este caso se dice que entre los cuerpos se ha producido una colisión o choque. Para que se produzca una colisión, no es necesario que los cuerpos haya estado físicamente en contacto en un sentido microscópico; basta que se aproximen lo suficiente como para que haya habido interacción entre ellos.                </div>
               </div>
             </div>
+            <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-colisiones.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
+            </div>
             <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejemplos</h1>
@@ -58,6 +62,10 @@ export const Colisiones = () => {
 
             </div>
           </div>
+          <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-colisiones.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
+            </div>
           <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejemplos</h1>

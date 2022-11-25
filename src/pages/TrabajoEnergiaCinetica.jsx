@@ -13,13 +13,17 @@ export const TrabajoEnergiaCinetica = () => {
             <div className="teoria-others">
               <div className="row d-flex align-center justify-content-center">
                 <div className="col-6 gx-0 imagen ms-2" style={{ width: 'calc(50% - 2rem)' }}>
-                <a href="https://modelo-trabajo-cinetica.netlify.app/" target="_blank" rel="noopener noreferrer" className='btn btn-success w-50' id='trabajo-cinetica'>Ir a módelo</a>
+                  <img style={{ width: '100%' }} src="https://media.discordapp.net/attachments/1026213110941483018/1045512585971240990/unknown.png?width=1202&height=676" alt="trabajo y energia" />
                 </div>
                 <div className="col-6 gx-0 texto">
                   <span>Trabajo y energía cinética</span>
                   El trabajo de dicha fuerza es igual a la diferencia entre el valor final y el valor inicial de la energía cinética de la partícula. En la primera línea hemos aplicado la segunda ley de Newton; la componente tangencial de la fuerza es igual a la masa por la aceleración tangencial.
                 </div>
               </div>
+            </div>
+            <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-trabajo-cinetica.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
             </div>
             <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
@@ -53,11 +57,15 @@ export const TrabajoEnergiaCinetica = () => {
                 El trabajo de dicha fuerza es igual a la diferencia entre el valor final y el valor inicial de la energía cinética de la partícula. En la primera línea hemos aplicado la segunda ley de Newton; la componente tangencial de la fuerza es igual a la masa por la aceleración tangencial.
               </div>
               <div className="col-12 gx-0 imagen">
-              <a href="https://modelo-trabajo-cinetica.netlify.app/" target="_blank" rel="noopener noreferrer" className='btn btn-success w-100' id='trabajo-cinetica' style={{ fontSize: '1.3rem' }}>Ir a módelo</a>
+              <img style={{ width: '100%' }} src="https://media.discordapp.net/attachments/1026213110941483018/1045512585971240990/unknown.png?width=1202&height=676" alt="trabajo y energia" />
               </div>
 
             </div>
           </div>
+          <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-trabajo-cinetica.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
+            </div>
           <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejercicios</h1>

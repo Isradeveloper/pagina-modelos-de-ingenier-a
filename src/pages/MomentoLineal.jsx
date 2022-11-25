@@ -12,8 +12,10 @@ export const MomentoLineal = () => {
           <>
             <div className="teoria-others">
               <div className="row d-flex align-center justify-content-center">
-                <div className="col-6 gx-0 imagen ms-2" style={{ width: 'calc(50% - 2rem)' }}>
-                <a href="http://www.educaplus.org/game/cantidad-de-movimiento" target="_blank" rel="noopener noreferrer" className='btn btn-success w-50' id='trabajo-cinetica' style={{ fontSize: '2rem' }}>Ir a módelo</a>
+              <div className="col-6 gx-0 imagen ms-2" style={{ width: 'calc(50% - 2rem)' }}>
+                <iframe src="https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_es.html" className='w-100 h-100'
+                  allowFullScreen>
+                </iframe>
                 </div>
                 <div className="col-6 gx-0 texto">
                   <span>Momento lineal</span>
@@ -21,6 +23,10 @@ export const MomentoLineal = () => {
 
                 </div>
               </div>
+            </div>
+            <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-colisiones.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
             </div>
             <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
@@ -49,12 +55,18 @@ export const MomentoLineal = () => {
                 <span>Momento lineal</span>
                 La cantidad de movimiento, momento lineal, ímpetu, momentum o simplemente momento, es una magnitud física derivada de tipo vectorial que describe el movimiento de un cuerpo en cualquier teoría mecánica.
               </div>
-              <div className="col-12 gx-0 imagen">
-              <a href="http://www.educaplus.org/game/cantidad-de-movimiento" target="_blank" rel="noopener noreferrer" className='btn btn-success w-100' id='trabajo-cinetica' style={{ fontSize: '1.3rem' }}>Ir a módelo</a>
+              <div className="col-12 gx-0 imagen mb-2" style={{ height: '20rem' }}>
+              <iframe src="https://phet.colorado.edu/sims/html/collision-lab/latest/collision-lab_es.html" className='w-100 h-100'
+                  allowFullScreen>
+                </iframe>
               </div>
 
             </div>
           </div>
+          <div className="modelo">
+              <h1>Modelo</h1>
+              <iframe src="https://isra-colisiones.netlify.app/" frameBorder="0" style={{ width: '100%', height: '100%' }}></iframe>
+            </div>
           <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejercicios</h1>

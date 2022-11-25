@@ -24,6 +24,10 @@ export const MomentoAngular = () => {
                 </div>
               </div>
             </div>
+            <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-momento-angular.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
+            </div>
             <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejercicios</h1>
@@ -74,6 +78,10 @@ export const MomentoAngular = () => {
 
             </div>
           </div>
+          <div className="modelo d-flex flex-column justify-content-center align-items-center">
+              <h1 className='mt-4'>Modelo</h1>
+              <iframe src="https://isra-momento-angular.netlify.app/" frameBorder="0" style={{ width: '80%', height: '100%' }}></iframe>
+            </div>
           <div className="ejemplos">
               <div className="row d-flex flex-column align-items-center">
                 <h1>Ejercicios</h1>
