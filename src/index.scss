@@ -127,7 +127,7 @@
   background: rgb(7,3,29);
   background: linear-gradient(90deg, rgba(7,3,29,1) 0%, rgba(20,13,54,1) 100%);
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 50rem;
   border-bottom: 10px solid #2c057f;
 
 
@@ -168,8 +168,9 @@
   background: rgb(7,3,29);
   background: linear-gradient(90deg, rgba(7,3,29,1) 0%, rgba(20,13,54,1) 100%);
   width: 100%;
-  height: calc(100vh - 8rem);
+  height: 40rem;
   border-bottom: 10px solid #2c057f;
+  margin-top: 2rem;
 
   h1 {
     display: flex;
